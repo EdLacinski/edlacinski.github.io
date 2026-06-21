@@ -52,3 +52,5 @@ src/
 The easiest first edits are in the files under `src/data/`. Pages are intentionally small section lists, so sections can be rearranged by changing their order in a page component without rewriting their layout logic.
 
 Creator-platform links, public reach snapshots, profile images, and featured video IDs are maintained in `src/data/platforms.js`. Because this is a static site without private API credentials, those figures are dated snapshots rather than guaranteed real-time counters.
+
+6/21 tried to fix commit
