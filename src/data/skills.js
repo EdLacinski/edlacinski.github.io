@@ -63,12 +63,41 @@ export const skillsByCareer = {
       description: 'Working with administrators, IT, HR, special education, school staff, and reporting stakeholders to validate and explain data.',
     },
   ],
-  hospitality: ['Bartending & food preparation', 'Guest experience', 'Fast-paced teamwork', 'Reliability & service'],
+  hospitality: [
+    {
+      title: 'Guest Service & De-escalation',
+      description: 'Helping guests, resolving issues, de-escalating frustration, and keeping the experience moving positively during busy or stressful situations.',
+    },
+    {
+      title: 'Fast-Paced Operations',
+      description: 'Balancing guest needs, staff support, concessions, cleanliness, timing, and daily operations in a high-traffic environment.',
+    },
+    {
+      title: 'Cash Handling & POS Systems',
+      description: 'Working with registers, tills, safes, cash records, POS systems, reconciliation, and end-of-shift accountability.',
+    },
+    {
+      title: 'Food Service & Concession Prep',
+      description: 'Supporting food preparation, sanitation, labeling, expiration tracking, refrigeration awareness, and proper temperature standards.',
+    },
+    {
+      title: 'Team Leadership & Training',
+      description: 'Training employees, supporting coworkers, adjusting assignments, and filling operational gaps to keep service running smoothly.',
+    },
+    {
+      title: 'Safety & Crowd Management',
+      description: 'Supporting crowd flow, guest safety, and calm operational decisions during busy releases, weather events, or power disruptions.',
+    },
+    {
+      title: 'Pennsylvania RAMP Certified',
+      description: 'Active through July 2026, supporting responsible-service awareness, compliance expectations, and safe guest environments.',
+    },
+  ],
   'content-creation': [
     'TCG content & livestreaming',
     'Video production',
     'Community & audience building',
-    'Riftbound judging & rules knowledge',
+    'Active Level 1 Judge — Riftbound Organized Play',
     'Cardfight!! Vanguard judge certification — 2026 goal',
     'Small-scale tournament organization — under 20 players',
     'Special-event hosting & coverage',

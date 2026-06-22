@@ -7,6 +7,9 @@ export const careerPaths = [
     pageTitle: 'Tech Support',
     shortDescription: 'Clear answers, patient support, and practical fixes that keep people moving.',
     summary: 'Helping people solve technical problems with patience, clarity, and practical troubleshooting.',
+    workSampleIntro: 'Planned samples will use anonymized troubleshooting scenarios and employer-safe documentation patterns.',
+    nextAdditions: 'Anonymized troubleshooting checklists, support scenarios, and escalation templates.',
+    contactPrompt: 'Looking for someone with user support, troubleshooting, and documentation experience?',
   },
   {
     id: 'data-analysis',
@@ -16,15 +19,20 @@ export const careerPaths = [
     pageTitle: 'Data Analysis',
     shortDescription: 'Reliable reporting and cleaner processes built from careful, useful data.',
     summary: 'Turning complex student information into accurate, reliable reporting.',
+    workSampleIntro: 'Samples will use synthetic or anonymized data without exposing student, district-sensitive, or personally identifiable information.',
+    nextAdditions: 'Synthetic SQL examples, Excel reconciliation samples, and reporting workflow documentation.',
+    contactPrompt: 'Interested in data quality, reporting, or operations-focused analysis experience?',
   },
   {
     id: 'hospitality',
     number: '03',
     label: 'Hospitality',
-    title: 'Hospitality / Bartending',
+    title: 'Hospitality & Guest Service',
     shortDescription: 'Fast, thoughtful service that makes busy rooms feel welcoming.',
-    summary:
-      'Creating a dependable guest experience through bartending, food preparation, teamwork, and calm execution in fast-paced environments.',
+    summary: 'Guest-first service, fast-paced operations, and team leadership.',
+    workSampleIntro: 'Planned samples will use employer-safe guest service and operations scenarios without sharing private company information.',
+    nextAdditions: 'Guest recovery scenarios, opening and closing checklists, and RAMP-informed service readiness notes.',
+    contactPrompt: 'Looking for guest service, operations, or Pennsylvania RAMP-certified hospitality support?',
   },
   {
     id: 'content-creation',
@@ -34,6 +42,9 @@ export const careerPaths = [
     shortDescription: 'Stories, streams, and events that turn a shared interest into community.',
     summary:
       'Building Eclipse Ed through TCG content, livestreaming, video production, event coverage, and community leadership—one genuine connection at a time.',
+    workSampleIntro: 'Future samples will demonstrate creator, event, and community work without exposing private partner or community information.',
+    nextAdditions: 'Media kit details, event coverage examples, and community project case studies.',
+    contactPrompt: 'Interested in media, sponsorships, TCG events, or creator collaborations?',
   },
 ]
 

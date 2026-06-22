@@ -7,7 +7,14 @@ function PlatformSection({ platform }) {
         <header className="platform-header">
           <div className="platform-identity">
             {platform.profileImage ? (
-              <img src={platform.profileImage} alt={`${platform.name} profile`} />
+              <img
+                src={platform.profileImage}
+                alt={`${platform.name} profile`}
+                width="240"
+                height="240"
+                loading="lazy"
+                decoding="async"
+              />
             ) : (
               <div className="platform-monogram" aria-hidden="true">{platform.monogram}</div>
             )}

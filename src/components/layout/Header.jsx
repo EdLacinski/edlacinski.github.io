@@ -1,12 +1,5 @@
 import NavLink from '../navigation/NavLink.jsx'
-
-const navItems = [
-  { id: 'home', label: 'Home', href: '#/' },
-  { id: 'tech-support', label: 'Tech Support', href: '#/tech-support' },
-  { id: 'data-analysis', label: 'Data Analysis', href: '#/data-analysis' },
-  { id: 'hospitality', label: 'Hospitality', href: '#/hospitality' },
-  { id: 'content-creation', label: 'Content Creation', href: '#/content-creation' },
-]
+import { navigationItems } from '../../data/navigation.js'
 
 function Header({ activePage, menuOpen, onToggleMenu, onNavigate }) {
   return (
@@ -25,7 +18,7 @@ function Header({ activePage, menuOpen, onToggleMenu, onNavigate }) {
           <span aria-hidden="true" />
         </button>
         <nav id="site-navigation" className={menuOpen ? 'site-nav is-open' : 'site-nav'} aria-label="Main navigation">
-          {navItems.map((item) => (
+          {navigationItems.map((item) => (
             <NavLink key={item.id} {...item} active={activePage === item.id} onNavigate={onNavigate} />
           ))}
         </nav>

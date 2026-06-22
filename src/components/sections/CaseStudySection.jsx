@@ -2,7 +2,7 @@ function CaseStudySection({ caseStudy }) {
   return (
     <section className="case-study content-section section-shell" aria-labelledby="case-study-title">
       <div className="content-section-heading">
-        <span className="section-number">CASE STUDY</span>
+        <span className="section-number">CASE STUDY{caseStudy.ownership ? ` · ${caseStudy.ownership}` : ''}</span>
         <div>
           <h2 id="case-study-title">{caseStudy.title}</h2>
           <p>{caseStudy.subtitle}</p>

@@ -1,11 +1,11 @@
-function WorkSamplesSection({ samples }) {
+function WorkSamplesSection({ samples, intro = 'Planned samples will demonstrate the process using employer-safe, privacy-conscious examples.' }) {
   return (
     <section className="work-samples content-section section-shell" aria-labelledby="samples-title">
       <div className="content-section-heading">
         <span className="section-number">WORK SAMPLES</span>
         <div>
           <h2 id="samples-title">Anonymized proof to add</h2>
-          <p>Future samples will demonstrate the process without exposing student or district-sensitive information.</p>
+          <p>{intro}</p>
         </div>
       </div>
       <div className="sample-grid">

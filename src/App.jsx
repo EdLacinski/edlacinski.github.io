@@ -6,12 +6,14 @@ import TechSupport from './pages/TechSupport.jsx'
 import DataAnalysis from './pages/DataAnalysis.jsx'
 import Hospitality from './pages/Hospitality.jsx'
 import ContentCreation from './pages/ContentCreation.jsx'
+import Contact from './pages/Contact.jsx'
 
 const pages = {
   'tech-support': TechSupport,
   'data-analysis': DataAnalysis,
   hospitality: Hospitality,
   'content-creation': ContentCreation,
+  contact: Contact,
 }
 
 function pageFromHash() {

@@ -10,6 +10,7 @@ export const dataAnalysisHighlights = {
 
 export const truancyCaseStudy = {
   title: 'Truancy Data Cleanup',
+  ownership: 'Supported',
   subtitle: 'A focused example of validation, compliance awareness, and organized review.',
   stages: [
     {

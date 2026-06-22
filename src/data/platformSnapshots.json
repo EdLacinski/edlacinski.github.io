@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-06-21T23:51:57.012Z",
+  "platforms": {
+    "eclipse-ed-youtube": {
+      "stats": {
+        "subscribers": "218",
+        "views": "29,825",
+        "videos": "134"
+      },
+      "updated": "June 20, 2026",
+      "latestVideo": {
+        "id": "4xB3gyYfbzY",
+        "title": "Top Teams Break Down BSF Philly | Vanguard Interviews"
+      }
+    },
+    "partial-edclipse-youtube": {
+      "stats": {
+        "subscribers": "11",
+        "views": "146",
+        "videos": "35"
+      },
+      "updated": "June 20, 2026",
+      "latestVideo": {
+        "id": "X5EYubJMfHY",
+        "title": "Dispatch | Episode 8 — Endgame: Suit Up or Shut Down"
+      }
+    },
+    "eclipse-ed-twitch": {
+      "stats": {
+        "followers": "368"
+      },
+      "updated": "June 20, 2026"
+    },
+    "eclipse-ed-discord": {
+      "stats": {
+        "members": "25"
+      },
+      "updated": "June 20, 2026"
+    },
+    "eclipse-ed-x": {
+      "stats": {
+        "followers": "142"
+      },
+      "updated": "June 20, 2026",
+      "latestPost": {
+        "id": "2067172358717125088",
+        "title": "Latest post from @ed_eclipse",
+        "url": "https://x.com/ed_eclipse/status/2067172358717125088"
+      }
+    }
+  }
+}

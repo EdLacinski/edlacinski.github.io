@@ -1,9 +1,9 @@
-function DataHighlightsSection({ focuses, tools }) {
+function DataHighlightsSection({ focuses, tools, title = 'Core Skills & Focus Areas' }) {
   return (
     <section className="data-highlights content-section section-shell" aria-labelledby="focus-title">
       <div className="content-section-heading">
         <span className="section-number">AT A GLANCE</span>
-        <h2 id="focus-title">Main focuses</h2>
+        <h2 id="focus-title">{title}</h2>
       </div>
       <div className="focus-grid">
         {focuses.map((focus) => (

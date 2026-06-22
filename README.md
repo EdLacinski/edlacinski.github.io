@@ -51,6 +51,21 @@ src/
 
 The easiest first edits are in the files under `src/data/`. Pages are intentionally small section lists, so sections can be rearranged by changing their order in a page component without rewriting their layout logic.
 
-Creator-platform links, public reach snapshots, profile images, and featured video IDs are maintained in `src/data/platforms.js`. Because this is a static site without private API credentials, those figures are dated snapshots rather than guaranteed real-time counters.
+Creator-platform links and display copy are maintained in `src/data/platforms.js`. Public reach figures and latest-content IDs live in `src/data/platformSnapshots.json` and are refreshed immediately before each GitHub Pages build by `npm run update:snapshots`.
 
-6/21 tried to fix commit
+The refresh is fault tolerant: if a credential is missing or a platform API is temporarily unavailable, deployment continues using the last saved snapshot. Discord member counts use the public invite endpoint and need no secret. To enable the other refreshes, add the applicable repository Actions secrets under **Settings → Secrets and variables → Actions**:
+
+- `YOUTUBE_API_KEY` for both YouTube channels, including subscriber/view/video totals, profile images, and latest uploads.
+- `TWITCH_CLIENT_ID` plus `TWITCH_CLIENT_SECRET` for public channel details. Add `TWITCH_ACCESS_TOKEN` with the necessary follower permissions to refresh the follower total; otherwise the last follower snapshot is retained.
+- `X_BEARER_TOKEN` for the X follower total, profile image, and latest original post. X API access depends on the account's current API plan.
+
+Run `npm run update:snapshots` locally to refresh available sources. Use `npm run update:snapshots -- --offline` to validate the script without network requests.
+
+## Pre-deploy checklist
+
+- Run `npm install` if dependencies changed.
+- Run `npm run build`.
+- Run `npm run preview` and check Home, Tech Support, Data Analysis, Hospitality, Content Creation, and Contact.
+- Check desktop and mobile layouts.
+- Check the browser console for errors.
+- Push to `main` only after the production build passes.
