@@ -6,11 +6,13 @@ import ExperienceProfilesSection from '../components/sections/ExperienceProfiles
 import CaseStudySection from '../components/sections/CaseStudySection.jsx'
 import ProjectsSection from '../components/sections/ProjectsSection.jsx'
 import WorkSamplesSection from '../components/sections/WorkSamplesSection.jsx'
+import ProofSampleSection from '../components/sections/ProofSampleSection.jsx'
 import CalloutSection from '../components/sections/CalloutSection.jsx'
 import { careerPathById } from '../data/careerPaths.js'
 import { dataAnalysisExperience, projectsByCareer } from '../data/projects.js'
 import { dataAnalysisHighlights, truancyCaseStudy, dataAnalysisSamples } from '../data/dataAnalysis.js'
 import { experienceByPage } from '../data/experience.js'
+import { workSampleByCareer } from '../data/workSamples.js'
 
 const id = 'data-analysis'
 
@@ -23,6 +25,7 @@ export default function DataAnalysis() {
       <ExperienceSection {...dataAnalysisExperience} title="Experience in Practice" />
       <CaseStudySection caseStudy={truancyCaseStudy} />
       <ProjectsSection projects={projectsByCareer[id]} title="Projects & Initiatives I Led or Supported" />
+      <ProofSampleSection sample={workSampleByCareer[id]} />
       <WorkSamplesSection samples={dataAnalysisSamples} intro={careerPathById[id].workSampleIntro} />
       <CalloutSection career={careerPathById[id]} />
     </PageShell>

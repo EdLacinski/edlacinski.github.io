@@ -29,7 +29,6 @@ export const truancyCaseStudy = {
 }
 
 export const dataAnalysisSamples = [
-  { title: 'SQL Investigation Example', description: 'An anonymized query showing how mismatched records can be isolated and reviewed.', status: 'Planned' },
   { title: 'Excel Reconciliation Workbook', description: 'A sanitized workbook demonstrating lookups, COUNTIFS, pivots, and exception tracking.', status: 'Planned' },
   { title: 'Reporting Calendar & Checklist', description: 'A redacted example of the timeline and validation steps behind a recurring reporting cycle.', status: 'Planned' },
 ]

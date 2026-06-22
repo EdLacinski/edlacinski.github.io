@@ -8,7 +8,7 @@ export default function Contact() {
       <section className="page-hero contact-hero section-shell">
         <div className="eyebrow"><span>05</span> Let&apos;s connect</div>
         <h1>Contact</h1>
-        <p>Professional opportunities, hiring conversations, and creator/business inquiries.</p>
+        <p>Choose the contact path that matches your reason for reaching out: professional networking, recruiting and hiring, or creator and event business.</p>
       </section>
       <ContactCardsSection contacts={contactOptions} />
     </PageShell>

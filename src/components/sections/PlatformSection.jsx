@@ -26,7 +26,7 @@ function PlatformSection({ platform }) {
           </div>
           {platform.url ? (
             <a className="platform-link" href={platform.url} target="_blank" rel="noreferrer">
-              Visit {platform.platform} <span aria-hidden="true">↗</span>
+              Visit {platform.platform} <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span>
             </a>
           ) : (
             <span className="platform-link platform-link-disabled">{platform.unavailableLinkLabel}</span>
@@ -39,7 +39,7 @@ function PlatformSection({ platform }) {
             <div className="platform-stats" aria-label={`${platform.name} audience snapshot`}>
               {platform.stats.map((stat) => (
                 stat.url ? (
-                  <a key={stat.label} className="platform-stat" href={stat.url} target="_blank" rel="noreferrer" aria-label={`${stat.label}: ${stat.value}. Open latest post`}>
+                  <a key={stat.label} className="platform-stat" href={stat.url} target="_blank" rel="noreferrer" aria-label={`${stat.label}: ${stat.value}. Open latest post in a new tab`}>
                     <strong>{stat.value}</strong>
                     <span>{stat.label} <span aria-hidden="true">↗</span></span>
                   </a>
@@ -77,7 +77,7 @@ function PlatformSection({ platform }) {
             <div className="platform-post">
               <div className="video-heading">
                 <span>Latest post</span>
-                <a href={platform.latestPost.url} target="_blank" rel="noreferrer">Open on X <span aria-hidden="true">↗</span></a>
+                <a href={platform.latestPost.url} target="_blank" rel="noreferrer">Open on X <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a>
               </div>
               <iframe
                 src={`https://platform.twitter.com/embed/Tweet.html?id=${platform.latestPost.id}&theme=dark`}

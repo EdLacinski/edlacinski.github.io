@@ -4,7 +4,7 @@ function WorkSamplesSection({ samples, intro = 'Planned samples will demonstrate
       <div className="content-section-heading">
         <span className="section-number">WORK SAMPLES</span>
         <div>
-          <h2 id="samples-title">Anonymized proof to add</h2>
+          <h2 id="samples-title">Additional samples planned</h2>
           <p>{intro}</p>
         </div>
       </div>

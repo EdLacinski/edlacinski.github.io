@@ -17,7 +17,6 @@ export const hospitalityExperience = {
 }
 
 export const hospitalitySamples = [
-  { title: 'Guest Recovery Scenario', description: 'A sample de-escalation walkthrough balancing guest service, company policy, and safety.', status: 'Planned' },
   { title: 'Opening / Closing Checklist', description: 'A sanitized checklist showing how daily service readiness can be organized before and after a shift.', status: 'Planned' },
   { title: 'Bar Service Readiness Notes', description: 'A RAMP-informed reference covering responsible service awareness, guest safety, and continued bar-service development.', status: 'Planned' },
 ]

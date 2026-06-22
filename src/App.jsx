@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Header from './components/layout/Header.jsx'
 import Footer from './components/layout/Footer.jsx'
 import Home from './pages/Home.jsx'
@@ -7,6 +7,7 @@ import DataAnalysis from './pages/DataAnalysis.jsx'
 import Hospitality from './pages/Hospitality.jsx'
 import ContentCreation from './pages/ContentCreation.jsx'
 import Contact from './pages/Contact.jsx'
+import { siteMetadata } from './data/siteMetadata.js'
 
 const pages = {
   'tech-support': TechSupport,
@@ -24,6 +25,7 @@ function pageFromHash() {
 function App() {
   const [activePage, setActivePage] = useState(pageFromHash)
   const [menuOpen, setMenuOpen] = useState(false)
+  const hasMounted = useRef(false)
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -35,6 +37,19 @@ function App() {
     window.addEventListener('hashchange', handleHashChange)
     return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
+
+  useEffect(() => {
+    const metadata = siteMetadata[activePage] || siteMetadata.home
+    document.title = metadata.title
+    const description = document.querySelector('meta[name="description"]')
+    if (description) description.setAttribute('content', metadata.description)
+
+    if (hasMounted.current) {
+      window.requestAnimationFrame(() => document.getElementById('main-content')?.focus())
+    } else {
+      hasMounted.current = true
+    }
+  }, [activePage])
 
   const Page = pages[activePage] || Home
 

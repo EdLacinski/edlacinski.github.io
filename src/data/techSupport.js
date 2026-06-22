@@ -15,7 +15,6 @@ export const techSupportExperience = {
 }
 
 export const techSupportSamples = [
-  { title: 'Windows Troubleshooting Checklist', description: 'A concise symptom-to-resolution checklist for common Windows support requests.', status: 'Planned' },
   { title: 'Blue Screen Triage Flow', description: 'An anonymized decision flow covering continuity, initial checks, recovery, and escalation.', status: 'Planned' },
   { title: 'Office Access Guide', description: 'A user-friendly guide for isolating app, account, file, license, and device issues.', status: 'Planned' },
   { title: 'Ticket Escalation Template', description: 'A technician note template capturing impact, symptoms, tests, results, and next steps.', status: 'Planned' },

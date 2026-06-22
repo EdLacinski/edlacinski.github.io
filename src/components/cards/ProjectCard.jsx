@@ -7,7 +7,7 @@ function ProjectCard({ item, type = 'project' }) {
       {item.details && <ul>{item.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>}
       {item.url && (
         <a href={item.url} target="_blank" rel="noreferrer">
-          View repository <span aria-hidden="true">↗</span>
+          View repository <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span>
         </a>
       )}
     </article>

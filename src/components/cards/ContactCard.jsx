@@ -6,11 +6,9 @@ function ContactCard({ contact }) {
       <span>{contact.label}</span>
       <h2>{contact.title}</h2>
       <p>{contact.description}</p>
-      <a className="contact-value" href={contact.url} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined}>
-        {contact.value}
-      </a>
+      <span className="contact-value">{contact.value}</span>
       <a className="button button-primary" href={contact.url} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined}>
-        {contact.buttonText}<span aria-hidden="true">→</span>
+        {contact.buttonText}<span aria-hidden="true">→</span>{external && <span className="sr-only"> (opens in a new tab)</span>}
       </a>
     </article>
   )
