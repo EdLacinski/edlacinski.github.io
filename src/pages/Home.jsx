@@ -1,6 +1,5 @@
 import PageShell from '../components/layout/PageShell.jsx'
 import HeroSection from '../components/sections/HeroSection.jsx'
-import IntroSection from '../components/sections/IntroSection.jsx'
 import CareerCardsSection from '../components/sections/CareerCardsSection.jsx'
 import FeaturedProofSection from '../components/sections/FeaturedProofSection.jsx'
 import CalloutSection from '../components/sections/CalloutSection.jsx'
@@ -11,7 +10,6 @@ function Home() {
   return (
     <PageShell>
       <HeroSection />
-      <IntroSection />
       <CareerCardsSection careers={careerPaths} />
       <FeaturedProofSection samples={workSamples} />
       <CalloutSection variant="home" />

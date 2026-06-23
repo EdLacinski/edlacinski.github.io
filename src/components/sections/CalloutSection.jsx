@@ -3,10 +3,11 @@ function CalloutSection({ variant = 'career', career }) {
     return (
       <section id="building" className="build-callout section-shell">
         <div className="build-mark" aria-hidden="true">↗</div>
-        <div><span className="section-number">LET'S CONNECT</span><h2>Four paths. One conversation.</h2><p>Want to connect, collaborate, or discuss an opportunity? Choose a career path to explore the details, or reach out directly.</p></div>
+        <div><span className="section-number">RECRUITING &amp; HIRING</span><h2>Hiring or recruiting?</h2><p>Start with the career path that best matches your opening, review the featured proof samples, or contact me directly to discuss where my experience can help your team.</p></div>
         <div className="build-actions">
-          <a className="button button-secondary" href="#/tech-support">Start exploring <span aria-hidden="true">→</span></a>
-          <a className="text-link" href="#/contact">Contact Edward <span aria-hidden="true">→</span></a>
+          <a className="button button-secondary" href="#/contact">Contact for hiring <span aria-hidden="true">→</span></a>
+          <a className="text-link" href="#featured-proof">View proof samples <span aria-hidden="true">→</span></a>
+          <a className="text-link" href="#paths">Explore career paths <span aria-hidden="true">→</span></a>
         </div>
       </section>
     )

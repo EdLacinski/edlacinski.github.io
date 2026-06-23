@@ -1,3 +1,5 @@
+import AnimatedMetric from '../cards/AnimatedMetric.jsx'
+
 function PlatformSection({ platform }) {
   const hasMedia = Boolean(platform.latestVideo || platform.latestPost)
 
@@ -40,12 +42,12 @@ function PlatformSection({ platform }) {
               {platform.stats.map((stat) => (
                 stat.url ? (
                   <a key={stat.label} className="platform-stat" href={stat.url} target="_blank" rel="noreferrer" aria-label={`${stat.label}: ${stat.value}. Open latest post in a new tab`}>
-                    <strong>{stat.value}</strong>
+                    <AnimatedMetric value={stat.value} />
                     <span>{stat.label} <span aria-hidden="true">↗</span></span>
                   </a>
                 ) : (
                   <div key={stat.label} className="platform-stat">
-                    <strong>{stat.value}</strong>
+                    <AnimatedMetric value={stat.value} />
                     <span>{stat.label}</span>
                   </div>
                 )

@@ -52,7 +52,7 @@ Platform display copy lives in `src/data/platforms.js`; generated public snapsho
 ## Image assets
 
 - Experience images: `public/images/experience/`
-- Social preview: add `public/images/social/eclipse-hub-preview.png` at 1200 × 630
+- Social preview: `public/images/social/eclipse-hub-preview.png` at 1200 × 630
 - Site icons: `public/images/icons/`
 
 Each image folder includes its own README with dimensions and naming guidance. The included SVG favicon works immediately; additional PNG and Apple icons can be added later.
@@ -61,14 +61,16 @@ Each image folder includes its own README with dimensions and naming guidance. T
 
 Portfolio proof uses synthetic, anonymized, employer-safe, or privacy-safe examples. It does not publish real student, staff, district, internal reporting, private community, sponsor, partner, phone, or address information.
 
-## Pre-deploy checklist
+## Launch checklist
 
-- Run `npm install` if dependencies changed.
-- Run `npm run build`.
-- Run `npm run preview`.
-- Check Home, Tech Support, Data Analysis, Hospitality, Content Creation, and Contact.
-- Check desktop and mobile layouts.
-- Confirm Contact URLs and email links.
-- Check the browser console for errors.
-- Confirm current metadata, metrics, dates, and image assets.
-- Push to `main` only after the production build passes.
+- [ ] Run `npm install` if dependencies changed.
+- [ ] Run `npm run build`, then inspect the production site with `npm run preview`.
+- [ ] Check Home, Tech Support, Data Analysis, Hospitality, Content Creation, and Contact at desktop and mobile widths.
+- [ ] Confirm all Contact URLs, email links, proof links, hash navigation, and external profile links.
+- [ ] Check the browser console for errors and confirm there is no horizontal overflow.
+- [ ] Confirm metadata, social preview, favicon, current metrics, dates, and image assets.
+- [ ] Review every page for private employer, student, staff, partner, sponsor, phone, address, or community information.
+- [ ] Confirm portfolio examples remain synthetic, anonymized, employer-safe, or privacy-safe.
+- [ ] Push to `main` only after the production build passes.
+- [ ] After deployment, test the public URL and refresh its preview in the social platforms where it will be shared.
+- [ ] Publish or personalize the drafts in `docs/launch-posts.md`.

@@ -17,6 +17,8 @@ const pages = {
   contact: Contact,
 }
 
+const sectionAnchors = new Set(['paths', 'featured-proof', 'building', 'main-content'])
+
 function pageFromHash() {
   const page = window.location.hash.replace(/^#\/?/, '').split('/')[0]
   return pages[page] ? page : 'home'
@@ -29,8 +31,26 @@ function App() {
 
   useEffect(() => {
     const handleHashChange = () => {
+      const anchorId = window.location.hash.slice(1)
+
       setActivePage(pageFromHash())
       setMenuOpen(false)
+
+      if (sectionAnchors.has(anchorId)) {
+        window.setTimeout(() => {
+          const target = document.getElementById(anchorId)
+          const headerOffset = document.querySelector('.site-header')?.offsetHeight ?? 0
+
+          if (target) {
+            window.scrollTo({
+              top: target.getBoundingClientRect().top + window.scrollY - headerOffset,
+              behavior: 'smooth',
+            })
+          }
+        }, 0)
+        return
+      }
+
       window.scrollTo({ top: 0, behavior: 'instant' })
     }
 
